@@ -14,8 +14,8 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const Greeter = await hre.ethers.getContractFactory("ERC20_Fountain");
+  const greeter = await Greeter.deploy(18,"XXX MING TEST","XXX");
 
   await greeter.deployed();
 
